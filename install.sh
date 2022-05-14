@@ -215,8 +215,9 @@ list_failed() {
 
 update_dependents () {
   log info "Updating dependents..."
-  ffmpeg -version >/dev/null || paru -S ffmpeg-amd-full --rebuild --noconfirm 
-  mpv -v >/dev/null || paru -S mpv-amd-full-git --rebuild --noconfirm
+  #ffmpeg -version >/dev/null || paru -S ffmpeg-amd-full --rebuild --noconfirm 
+  #mpv -v >/dev/null || paru -S mpv-amd-full-git --rebuild --noconfirm
+  paru -S mpv-amd-full-git --rebuild --noconfirm 
 }
 
 print_log() {
