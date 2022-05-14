@@ -30,6 +30,7 @@ main () {
   get_targets 
   install_targets
   update_dependents
+  clear
   log info "Install complete."
   print_log
 }
